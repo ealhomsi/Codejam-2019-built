@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
+  <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <meta name="description" content="Website for McGill CodeJam 2019" />
+  <meta property="og:title" content="CodeJam 2019" />
+  <meta property="og:description" content="A weekend-long themed hackathon organized by the McGill Electrical, Computer, and Software Engineering Student Society" />
+  <meta property="og:image" content="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/40847037_1934406596653231_3706804492981764096_o.png?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=764068b4a9866084bd6246809dc13dfb&oe=5C8225F9" />
+  <title>code.jam(2019)</title>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+  <div class="loader" aria-hidden="true"></div>
+  <section id="particles-js" class="hero">
+    <div class="hero__wrapper">
+      <img class="hero__logo" src="static/jar.svg" alt="CodeJam Logo"/>
+      <div class="hero__text-wrapper">
+        <h1 class="hero__title">code.jam(<em>2019</em>)</h1>
+        <span class="hero__subtitle">November 15-17, 2019 @ McGill University</span>
+        <nav class="nav">
+          <ul class="nav__item-wrapper">
+            <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#faq">FAQ</a></li>
+            <li class="nav__item"><a href="#sponsors">Sponsors</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <main class="main">
+    <section class="section" id="about">
+      <h2 class="section__header">What is CodeJam?</h2>
+      <div class="about">
+        <p class="about__content">
+          CodeJam is the yearly hackathon run by the McGill Electrical, Computer, and
+          Software Student Society in our very own Trottier Engineering Building. We
+          provide an engaging environment for students to learn and have fun over a
+          weekend of coding!
+        </p>
+        <ul class="about-list">
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-laptop-code"></span>
+              Code
+            </h3>
+            <p class="about-list__content">
+              Build an awesome project with your team over the course of the weekend (and get feedback
+              and mentoring throughout).
+            </p>
+          </li>
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-users"></span>
+              Network
+            </h3>
+            <p class="about-list__content">
+              Meet like-minded hackers and connect with companies looking to hire their next
+              batch of talented developers.
+            </p>
+          </li>
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-utensils"></span>
+              Food
+            </h3>
+            <p class="about-list__content">
+              Great meals and snacks will be provided all weekend. This goes from Friday's
+              dinner all the way to Sunday's lunch!
+            </p>
+          </li>
+          <li class="about-list__item">
+            <h3 class="about-list__header">
+              <span class="about-list__icon fas fa-award"></span>
+              Prizes
+            </h3>
+            <p class="about-list__content">
+              $4000 in cash prizes are up for grabs! More details about the prize breakdown
+              to be determined.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      </div>
+    </section>
+     <img class="background__pr js-background-pr" src="static/lines/left-line.svg" alt="Left Line" />
+     <img class="background__pr__right js-background-pr" src="static/lines/right-line.svg" alt="Left Line" />
+    <section class="section">
+      <h2 class="section__header" id="faq">Questions</h2>
+      <ul class="faq">
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Where will CodeJam be held?</h3>
+          <p class="faq__answer">
+            CodeJam will be held at the Trottier Engineering Building, at
+            <a href="http://maps.mcgill.ca/?campus=DWT&txt=EN&id=Trottier">3630 Rue University, Montreal, QC, H3A 0C6</a>.
+            The building is wheelchair-accessible, and has elevators and accessible bathrooms.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Will there be parking?</h3>
+          <p class="faq__answer">
+            There is no dedicated parking for the event, but there is free street parking on
+            weekends in the surrounding neighbourhood around Milton and Parc.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">How many people can be in a team?</h3>
+          <p class="faq__answer">
+            Each team can have between 1 and 4 members. If you don't have a team but want to be
+            part of one, you can still sign up as a free agent, and we'll make accommodations at the start of the event
+            to
+            help you find a group to work with.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Who is eligible to participate?</h3>
+          <p class="faq__answer">
+            CodeJam requires at least one member per team to be in ECSE or CS at McGill.
+            (Required to get access to the building over the weekend.)
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">I haven't had much experience coding. Should I still come?</h3>
+          <p class="faq__answer">
+            Yes! CodeJam is open to hackers of all levels of experience. Just bring an open mind and
+            get ready to learn and code!
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">What do I need to bring for the weekend?</h3>
+          <p class="faq__answer">
+            Your student ID, laptop, and charger should be enough. Food and drinks are on us, but
+            feel free to bring your own if you're still feeling peckish!
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">How do I register?</h3>
+          <p class="faq__answer">
+            Due to an impressive amount of demand for CodeJam 2019, registration is now closed! Hope to see you all at the competition!
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Will there be accommodations for dietary restrictions?</h3>
+          <p class="faq__answer">
+            Yes. We will provide nut-free, vegetarian, and vegan food options for each meal. If
+            you have special dietary needs, please specify once you register.
+          </p>
+        </li>
+        <li class="faq__question-wrapper">
+          <h3 class="faq__question">Can I iterate on a past project as my submission?</h3>
+          <p class="faq__answer">
+            No. Participants should be creating something from scratch once the hacking
+            begins so we can have an even playing field for everyone!
+          </p>
+        </li>
+      </ul>
+      <p class="other-questions">
+        Have any questions not listed here? Say hi at <a href="mailto:codejam@mcgilleus.ca">codejam@mcgilleus.ca</a>
+        or leave us a message at our <a href="https://www.facebook.com/mcgillcodejam/">Facebook page</a>. We'll try
+        to answer all queries as soon as possible! 🚀
+      </p>
+    </section>
+    <section class="section" id="sponsors">
+      <h2 class="section__header">Our sponsors</h2>
+      <div class="sponsor-list">
+        <ul class="sponsor-list__tier">
+           <li class="sponsor-list__logo sponsor-list__logo--terra">
+            <a href="https://wrnch.ai/">
+              <img src="static/sponsors/terra/Wrnch.svg" alt="Wrnch logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--terra">
+            <a href="https://www.samasource.com/">
+              <img src="static/sponsors/terra/Samasource.png" alt="SamaSource logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--terra">
+            <a href="https://www.intact.ca/en/personal-insurance.html">
+              <img src="static/sponsors/terra/Intact.svg" alt="Intact logo"/>
+            </a>
+          </li>
+        </ul>
+        <ul class="sponsor-list__tier">
+            <li class="sponsor-list__logo sponsor-list__logo--giga">
+              <a href="https://plot.ly/">
+                <img src="static/sponsors/giga/plotly.png" alt="Plotly logo"/>
+              </a>
+            </li>
+        </ul>
+        <ul class="sponsor-list__tier">
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.coveo.com/">
+              <img src="static/sponsors/mega/coveo.png" alt="Coveo logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.hopper.com/">
+              <img src="static/sponsors/mega/hopper.png" alt="Hopper logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.cirquedusoleil.com/">
+              <img src="static/sponsors/mega/cirque-du-soleil.svg" alt="Cirque Du Soleil logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.explorance.com/">
+              <img src="static/sponsors/mega/explorance.png" alt="Explorance logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.genetec.com/">
+              <img src="static/sponsors/mega/Genetec.png" alt="Genetec logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.giro.ca/">
+              <img src="static/sponsors/mega/Giro.png" alt="Giro logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.github.com/">
+              <img src="static/sponsors/mega/github.png" alt="GitHub logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.indexexchange.com/">
+              <img src="static/sponsors/mega/IndexExchange.png" alt="IndexExchange logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.mayahtt.com/">
+              <img src="static/sponsors/mega/MayaHTT.png" alt="MayaHTT logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.mistplay.com/">
+              <img src="static/sponsors/mega/Mistplay.svg" alt="Mistplay logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sponsor-list__logo--mega">
+            <a href="https://www.morganstanley.com/">
+              <img src="static/sponsors/mega/morgan-stanley.svg" alt="Morgan Stanley logo"/>
+            </a>
+          </li>
+          <li class="sponsor-list__logo sap-logo">
+            <a href="https://www.sap.com/">
+              <img src="static/sponsors/mega/SAP.svg" alt="SAP logo"/>
+            </a>
+          </li>
+        </ul>
+        <ul class="sponsor-list__tier">
+            <li class="sponsor-list__logo sponsor-list__logo--byte">
+              <a href="https://www.ericsson.com/">
+                <img src="static/sponsors/byte/Ericsson.png" alt="Ericsson logo"/>
+              </a>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--byte">
+              <a href="https://www.kronos.com/">
+                <img src="static/sponsors/byte/Kronos.png" alt="Kronos logo"/>
+              </a>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--byte">
+              <a href="https://www.pwc.com/">
+                <img src="static/sponsors/byte/Pwc.svg" alt="PWC logo"/>
+              </a>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--byte">
+              <a href="http://www.squarepoint-capital.com/">
+                <img src="static/sponsors/byte/Squarepoint.jpg" alt="Squarepoint logo"/>
+              </a>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--byte">
+              <a href="https://www.ubisoft.com/">
+                <img src="static/sponsors/byte/Ubisoft.svg" alt="Ubisoft logo"/>
+              </a>
+            </li>
+            <li class="sponsor-list__logo sponsor-list__logo--byte">
+              <a href="https://www.wolfram.com/">
+                <img src="static/sponsors/byte/Wolfram.png" alt="Wolfram logo"/>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="social-list">
+      <li class="social-list__link"><a href="https://www.facebook.com/mcgillcodejam"><span class="fab fa-facebook fa-2x"></span></a></li>
+      <li class="social-list__link"><a href="mailto:sponsor.codejam@mcgilleus.ca"><span class="fas fa-envelope fa-2x"></span></a></li>
+    </ul>
+    <p class="footer__text">Made with ⚡️ by McGill ECSESS</p>
+  </footer>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126697954-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126697954-1');
+  </script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
